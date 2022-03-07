@@ -43,29 +43,29 @@ client.login(ayarlar.token)
 
 client.on('ready', () => {
  
-var actvs = ["Night Code", "AliBerat", "Lavinia", "Lilla", "RestVevo", "Oğuz", "Ayaz"];
+var actvs = ["Bot Değişen Durum 1", "Bot Değişen Durum 2", "Bot Değişen Durum 3"];
       
 client.user.setActivity(actvs[Math.floor(Math.random() * (actvs.length - 1) + 1)], { type: 'WATCHING' });
 setInterval(() => {client.user.setActivity(actvs[Math.floor(Math.random() * (actvs.length - 1) + 1)], { type: 'WATCHING'})}, 2000);
       
   
-const voiceChannel = "939163699950796860";
+const voiceChannel = "BOTUN SESLI KANALA GIRECEGI KANAL ID";
 client.channels.cache.get(voiceChannel).join().catch(err => {throw err})
 
 console.log('Bot Bağlandı!');
 console.log(`Tokene Sahip Bot: ${client.user.tag}`)});
 
+client.rol = {
+    kpaylaşım: "KOD PAYLASIM ROL ID",
+    yetkili: "YETKILI ROL ID",
+    rolverme: "ROL VERME ROL ID",
+    altyapı: "ALTYAPI ROL ID",
+    js: "JS KOD ROL ID"
+}
 client.elevation = message => {if(!message.guild) {return}
 let yetki = 0;
-if(message.member.roles.cache.has("938102074925785120")) yetki = 1; // Yetkili Rol ID
+if(message.member.roles.cache.has(client.rol.yetkili)) yetki = 1
 return yetki;
 };
 
-client.rol = {
-    kpaylaşım: "938102024518635531",
-    yetkili: "938102074925785120",
-    rolverme: "939160232343515157",
-    altyapı: "938826113201868851",
-    js: "938825983698550875"
-}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
