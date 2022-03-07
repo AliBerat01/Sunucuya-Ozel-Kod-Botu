@@ -35,7 +35,7 @@ if(message.channel.id !== "KANAL ID") return message.channel.send(new Discord.Me
     
     message.channel.send(`\`${kodIsım}\` adlı altyapı paylaşıldı!`)
     
- message.guild.channels.cache.get("KOD LOG ID").send(embed)
+ message.guild.channels.cache.get("ALTYAPI LOG ID").send(embed)
     
 
     const kod = new Discord.MessageEmbed()
