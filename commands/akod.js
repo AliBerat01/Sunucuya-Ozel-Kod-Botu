@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 
 exports.conf = {
-    name: "jskod",
-    aliases: ["jkod", "javascriptkod", "jscode"]
+    name: "akod",
+    aliases: ["akod", "altyapıkod", "acode"]
 }
 
 exports.run = async(client, message, args) => {
