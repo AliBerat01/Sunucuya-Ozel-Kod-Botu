@@ -1,10 +1,10 @@
 {
-  "name": "nigth-code",
+  "name": "aliberat-code",
   "version": "1.0.0",
   "description": "",
-  "main": "nigth.js",
+  "main": "aliberat.js",
   "scripts": {
-    "test": "node nigth.js"
+    "test": "node aliberat.js"
   },
   "author": "AliBerat",
   "license": "MIT",
